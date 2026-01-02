@@ -200,6 +200,8 @@ jobs:
     if: github.ref == 'refs/heads/main'
     needs: [deploy-testing]
     runs-on: ubuntu-latest
+    env:
+      AWS_DEFAULT_REGION: us-west-2
     steps:
       - uses: actions/checkout@v3
       - run: |
