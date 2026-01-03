@@ -202,8 +202,6 @@ jobs:
     runs-on: ubuntu-latest
     env:
       AWS_DEFAULT_REGION: us-west-2
-      TESTING_REGION: ${{ env.TESTING_REGION }}
-      TESTING_PIPELINE_EXECUTION_ROLE: ${{ env.TESTING_PIPELINE_EXECUTION_ROLE }}
     steps:
       - uses: actions/checkout@v3
 
